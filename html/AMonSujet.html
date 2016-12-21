@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+   Design by TEMPLATED
+   http://templated.co
+   Released for free under the Creative Commons Attribution License
+   
+   Name       : StoneWork 
+   Description: A two-column, fixed-width design with dark color scheme.
+   Version    : 1.0
+   Released   : 20140228
+   
+   -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>E-Portfolio : A mon sujet</title>
+      <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+      <link href="../default.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+      <!--[if IE 6]>
+      <link href="default_ie6.css" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <style>
+         .tabDiv{
+			color: black;
+         }
+         .paragraphe{
+			text-align:left;
+         }
+         .speWord{
+			color: blue;
+         }
+         .speWord2{
+			color: orange;
+         }
+         .tabs {
+			 font-size: 0;
+			 margin: 25px 0;
+			 color: rgba(0,0,0,0.8);
+         }
+         .tabs:after {
+			 clear: both;
+			 content: '';
+			 display: table;
+         }
+         .tabs .tab {
+			font-size: 1.4rem;
+			display: inline;
+         }
+         .tabs .tab-label {
+			cursor: Pointer;
+			 background: rgba(0,0,0,0.8); 
+			 color: white;
+			 display: inline-block;
+			 font-size: 30px;
+			 font-size: 1.4rem;
+			 left: 1px;
+			 margin-left: -1px;
+			 padding: 10px; 
+			 position: relative;
+			 vertical-align: bottom;
+			 border-radius: 5px;
+         }
+		 .tabs .tab-label:hover{
+			background: rgba(0,0,0,0.3); 
+			color: black;
+			animation: colorisation2;
+			-webkit-animation-name: colorisation2; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+			animation-name: colorisation2;
+			animation-duration: 0.5s;
+		 }
+		 
+		 /* Chrome, Safari, Opera */
+		@-webkit-keyframes colorisation2 {
+			from {background: rgba(0,0,0,0.8);}
+			to {background: rgba(0,0,0,0.3);}
+		}
+
+		/* Standard syntax */
+		@keyframes colorisation2 {
+			from {background: rgba(0,0,0,0.8);}
+			to {background: rgba(0,0,0,0.3);}
+		}
+         .tabs .tab > [type="radio"] {
+			 clip: rect(0 0 0 0);
+			 height: 1px;
+			 opacity: 0;
+			 position: fixed;
+			 width: 1px;
+			 z-index: -1;
+         }
+         .tabs .tab-panel {
+			 display: inline;
+			 display: inline-block;
+			 overflow: hidden;
+			 position: relative;
+			 height: 0;
+			 width: 0;
+         }
+         .tabs .tab-content {
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			 display: block;
+			 background: rgba(250,250,250,0.8);
+			 padding: 0 20px;
+			 
+			 float: left;
+			 font-size: 16px;
+			 font-size: 1.4rem;
+			 
+			 width: 100%;
+         }
+         .tabs .tab [type="radio"]:checked + .tab-label {
+			 background: rgba(0,0,0,0.3);
+         }
+         .tabs .tab [type="radio"]:checked ~ .tab-panel {
+			display: inline;
+         }
+         /*
+         =======================================
+         INTERNET EXPLORER 8 and below 
+         =======================================
+         */
+         @media \0screen\,screen\9 {
+         /* IE7 and IE6 */
+         .tabs {
+         zoom: 1;
+         }
+         /* IE8 and below */
+         .tabs .tab .tab-radio {
+         filter: Alpha(opacity=0);
+         position: absolute;
+         z-index: -1;
+         }
+         /* IE7 and IE6 */
+         .tabs .tab .tab-panel, {
+         display: none;
+         height: auto;
+         overflow: visible;
+         position: static;
+         width: auto;
+         }
+         /* IE7 and IE6 */
+         .tabs .tab-content, {
+         float: none;
+         padding-bottom: 1px;
+         padding-top: 1px;
+         width: auto;
+         }
+         /* IE8 and below */
+         .tabs .checked label {
+         background: white;
+         border-bottom-width: 0;
+         padding-bottom: 11px;
+         z-index: 1;
+         }
+         /* IE8 */
+         .tabs .checked .tab-panel {
+         display: inline;
+         }
+         /* IE7 and IE6 */
+         .tabs .checked .tab-panel, {
+         display: inline;
+         float: left;
+         width: 100%;
+         }
+         }
+      </style>
+  
+      <head>
+        <!--[if lt IE 9]><script>window.ltIE9=true</script><![endif]-->
+         <script>
+            if(window.ltIE9) {
+              (function($) {
+            	$('.tabs input[type="radio"]:checked').closest('.tab').addClass('checked');
+            	$('html').on('click', '.tabs input', function() {
+            	  $('input[name="' + this.name + '"]').closest('.tab').removeClass('checked');
+            	  $(this).closest('.tab').addClass('checked');
+            	});
+              })(window.jQuery);
+            }
+			
+			function clickOn(){
+			alert("Pourquoi tenter d'accéder à nouveau à la page sur laquelle vous êtes déjà ? Enfin, ce faites ce que vous voulez !");
+			}
+         </script>
+   </head>
+   <body>
+      <div id="header-wrapper">
+         <div id="header" class="container">
+            <div id="logo">
+               <h1><a href="#">E-portfolio</a></h1>
+               </br>
+            </div>
+            <div id="menu">
+               <ul>
+                  <li><a href="../index.html" accesskey="1" title=""><span class="fa fa-5x fa-home" aria-hidden="true"></span>Accueil</a></li>
+                  <li><a href="Projets.html" accesskey="2" title=""><span class="fa fa-folder" aria-hidden="true"></span>Mes projets</a></li>
+                  <li class="active"><a href="AMonSujet.html" accesskey="3" title=""><span class="fa fa-user" aria-hidden="true"></span>A mon sujet</a></li>
+                  <li><a href="Carriere.html" accesskey="4" title=""><span class="fa fa-suitcase" aria-hidden="true"></span>Carrière</a></li>
+                  <li><a href="Contact.html" accesskey="5" title=""><span class="fa fa-envelope" aria-hidden="true"></span>Me contacter</a></li>
+               </ul>
+            </div>
+         </div>
+         <div id="banner" class="container">
+            <div class="title">
+               <h2>A mon sujet</h2>
+               <span class="byline">
+               Voici une description non exhaustive de la personne que je peut être.
+               </span>
+            </div>
+            <ul class="actions">
+               <li><a href="Projets.html" class="button">Suggestion : Voir mes projets</a></li>
+            </ul>
+         </div>
+      </div>
+      <center>
+         <div id="wrapper">
+            
+            <div>
+			
+               <div class="tabs">
+                  <div class="tab">
+                     <input class="tab-radio" type="radio" id="tab-1" name="tab-group-1" checked>
+                     <label class="tab-label" for="tab-1">Personnalité</label>
+                     <div class="tab-panel">
+                        <div class="tab-content">
+							<span class="byline">
+								 <p class="paragraphe">
+									Je suis quelqu'un d'<span class="speWord">indépendant</span> qui <span class="speWord">aime apprendre</span> tout un tas de choses, ce qui fait 
+									que je me forme en autodidacte dans plusieurs disciplines (<em>L'informatique, la musique, 
+									le dessin, la psychologie, la philosophie</em> etc).
+								 </p>
+								 ___________________________
+								 <p class="paragraphe">
+									Ma personnalité <span class="speWord">créative</span> et <span class="speWord">réfléchie</span> me pousse à aimer les disciplines artistiques qui 
+									demandent paradoxalement une bonne dose de <span class="speWord">rigueur</span>. La programmation et la musique en 
+									sont de bons exemples.
+								 </p>
+								 ___________________________
+								 <p class="paragraphe">
+									Je suis aussi très <span class="speWord">curieux</span>, et au delà même du fait de créer, j'aime trouver. Je fais 
+									beaucoup de recherches en musique et en informatique. Ce qui me donne beaucoup d'idées de 
+									projets. (Cf <a href="#">Projets</a>)
+								 </p>
+								 ___________________________
+								 <p class="paragraphe">
+									J'ai un coté <span class="speWord">rêveur</span> et <span class="speWord">idéaliste</span> qui se traduit par 
+									mon souhait de réaliser quelque chose qui profitera à l'humanité. D'apporter ma pierre à ce vaste monde
+								 </p>
+								 <p>
+							</span>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <div class="tab">
+                     <input class="tab-radio" type="radio" id="tab-2" name="tab-group-1">
+                     <label class="tab-label" for="tab-2">Ambitions</label>
+                     <div class="tab-panel">
+                        <div class="tab-content">
+                           <span class="byline">
+								<h2></h2>
+								
+								<p class="paragraphe">
+								J'aimerai devenir <span class="speWord2">Devellopeur</span> car je programme depuis plusieurs années, et je sais 
+								que j'aime suffisament cela pour en faire toute ma vie. Plus le grand nombre d'avantage personnel que j'y trouve. 
+								Par exemple, j'apprecie le fait de savoir comment ça "fonctionne à l'interieur". Le fait de pouvoir réparer mon 
+								ordinateur par moi même. Ou même de pouvoir créer des logiciels qui m'aident dans mes activités.
+								</p>
+								___________________________
+								<p class="paragraphe">
+								J'aimerai travailler dans la <span class="speWord2">recherche</span>  un jour où l'autre pour réaliser mon rêve 
+								de faire une découverte majeure qui contribuerait au bien être de l'humanité. Cela me permettrait d'avoir plus 
+								de moyens que en tant qu'indépendant qui travaille sur son temps libre.
+								</p>
+							</span>
+                        </div>
+                     </div>
+                  </div>
+                  
+				  
+				  <div class="tab">
+                     <input class="tab-radio" type="radio" id="tab-3" name="tab-group-1">
+                     <label class="tab-label" for="tab-3">Valeurs/Motivations</label>
+                     <div class="tab-panel">
+                        <div class="tab-content">
+                           <p class="paragraphe">
+								Comme beaucoup, je souhaite avoir la sécurité de l'emploi car ça facilite la vie. On a pas à se préoccuper des 
+								finances car on sait ce qu'on va toucher à la fin du mois et pouvoir s'organiser en fonction. Cela limite la mobilité 
+								puisque'on est attaché à notre lieu de travail, mais cela ne me dérange pas.
+						   </p>
+						   ___________________________
+						    <p class="paragraphe">
+								Je souhaite aussi avoir de bonnes relations interpersonnels au travail car une bonne humeur est davantage motivante, 
+								et pouvoir compter sur ces collèges réciproquement améliore la synergie du groupe.
+						   </p>
+						   ___________________________
+						   <p class="paragraphe">
+								Avoir de l'interêt pour mon travail me semble très important pour mon développement personnel. Mais également pour 
+								augmenter mes performances (se sentir plus impliqué peut rendre plus productif).
+						   </p>
+						   ___________________________
+						   <p class="paragraphe">
+								Je veux aussi développer mes compétences : actualiser mon potentiel. Être informaticien facilite notre 
+								usage du materiel. Nous permet d'avoir une meilleure prise sur le domaine. On accroit notre champ des possibles. 
+								Et cela est me plait.
+						   </p>
+                        </div>
+                     </div>
+                  </div>
+               
+				   <div class="tab">
+						 <input class="tab-radio" type="radio" id="tab-4" name="tab-group-1">
+						 <label class="tab-label" for="tab-4">Portrait Chinois</label>
+						 <div class="tab-panel">
+							<div class="tab-content">
+							   <p class="paragraphe">
+									Si j'étais une collection, je serais une série de livres divers et variés. Mais pas des livres de fictions. Non. Des livres d'histoire, de philosophie, de psychologie, d'informatique, de musique, etc. Des livres pour apprendre. Car j'aime apprendre toujours plus. Etre toujours plus instruits.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais une matière enseignée à l'école je serais la programmation. Un subtil mélange entre réflexion et création. Car en programmation il faut savoir réfléchir, être cadré sinon on est incapable de formaliser les phénomènes; mais en même temps, il faut pouvoir s'imaginer comment "ça marche". Et etre créatif. Et j'aime ces aspects. J'essaie d'etre le meilleur possible à cela.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais une pierre précieuse je serais du quartz. Parce que cette pierre ne coute pas chère. Si elle a de l'importance, c'est juste parce qu'on lui en donne. Et je préfère rester simple et etre apprécié sincèrement.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais un super pouvoir je serai l'omniscience. Car qu'importe le prix, je préfère savoir les choses. J'aime connaitre. Chaque connaissance a probablement une autre qui lui est associée permettant de bien agir. Et savoir permet de bien se comporter. De juger les choses à leur juste valeur.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais un des cinq sens je serais l'odorat. Car c'est un sens peu communément apprécié à sa juste valeur. Il présente beaucoup de lacunes, et met du temps a être utilisé efficacement. Par exemple, combien de gens savent que ce sens peut être plus efficace que la vue pour se remémorer des choses ? Combien font attention à la sagesse des expressions telle que "Je ne peux pas le sentir celui là ?". Il n'y a pas de "meilleur" sens que d'autres, mais peut être l'odorat en est un qui pourrait aller loin pour peu qu'on le laisse se développer.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais une fleur, je serais une Amarante queue-de-renard car elle signifie "sans espoir, mais pas désespéré". Cela représente ma détermination. Une fois que je suis lancé sur un projet qui me tient à coeur, quelque soit les choses que cela inclue, je coninuerait jusqu'à réussir.
+								</p>
+								___________________________
+								<p class="paragraphe">
+									Si j'étais un homme historique je serait Alan Turing. Car sa participation à l'informatique correspond à mon souhait d'apporter ma pierre dans le domaine. J'aimeais aider l'humanité grâce à une invention dans l'informatique. Même si je me fiche de la reconnaissance, et que je tombe dans l'oubli, apporter une contribution est un de mes rêves.
+								</p>
+							   
+							</div>
+						 </div>
+                  </div>
+                  
+				   <div class="tab">
+                     <input class="tab-radio" type="radio" id="tab-5" name="tab-group-1">
+                     <label class="tab-label" for="tab-5">Nuage De Mots</label>
+                     <div class="tab-panel">
+                        <div class="tab-content">
+                           <img src="../images/C6TD-Mas-NuageDeMots.png" alt="Nuage_De_Mots" height="100%" width="100%">
+                        </div>
+                     </div>
+                  </div>
+               
+			   </div>
+               
+            </div>
+         </div>
+         <div id="welcome">
+         </div>
+         <div id="copyright" class="container">
+            <p></p>
+         </div>
+      </center>
+   </body>
+</html>

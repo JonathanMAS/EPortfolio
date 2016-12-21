@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : StoneWork 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140228
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>E-Portfolio : Mas Jonathan</title>
+
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<style>
+	h1.load{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 4.6875em;
+  color: transparent;
+  letter-spacing: 0.01em;
+}
+.load span{
+  text-shadow:
+    0 0 2px rgba(204, 208, 212,0.9),
+    0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1),
+    0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.45);
+  
+    animation: loading 1.20s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+	to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+.load span:nth-child(2){
+  animation-delay:0.15s;
+}
+.load span:nth-child(3){
+  animation-delay:0.30s;
+}
+.load span:nth-child(4){
+  animation-delay:0.45s;
+}
+.load span:nth-child(5){
+  animation-delay:0.60s;
+}
+.load span:nth-child(6){
+  animation-delay:0.75s;
+}
+.load span:nth-child(7){
+  animation-delay:0.90s;
+}
+.load span:nth-child(8){
+  animation-delay:1.05s;
+}
+.load span:nth-child(9){
+  animation-delay:1.20s;
+}
+</style>
+</head>
+<body>
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1><a href="http://infolimon.iutmontp.univ-montp2.fr/~masj/EPortfolio/">E-portfolio</a></h1>
+				</div>
+				<div id="menu">
+					<ul>
+						<li class="active"><a href="index.html" accesskey="1" title=""><span class="fa fa-5x fa-home" aria-hidden="true"></span>Accueil</a></li>
+						<li><a href="html/Projets.html" accesskey="2" title=""><span class="fa fa-folder" aria-hidden="true"></span>Mes projets</a></li>
+						<li><a href="html/AMonSujet.html" accesskey="3" title=""><span class="fa fa-user" aria-hidden="true"></span>A mon sujet</a></li>
+						<li><a href="html/Carriere.html" accesskey="4" title=""><span class="fa fa-suitcase" aria-hidden="true"></span>Carrière</a></li>
+						<li><a href="html/Contact.html" accesskey="5" title=""><span class="fa fa-envelope" aria-hidden="true"></span>Me contacter</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner" class="container">
+				<div class="title">
+					
+					<h1 class="load">
+					  <span>J</span>
+					  <span>o</span>
+					  <span>n</span>
+					  <span>a</span>
+					  <span>t</span>
+					  <span>h</span>
+					  <span>a</span>
+						<span>n</span>
+					</h1>
+					<h1 class="load">
+					  <span>M</span>
+					  <span>a</span>
+					  <span>s</span>
+					</h1>
+					<span class="byline">Passioné d'Informatique, de Musique, de Philosophie et de nombreuses choses</span>
+				</div>
+			</div>
+		</div>
+		
+		<center>
+			<div id="wrapper">
+				<div id="three-column" class="container">
+					<div class="title">
+						<h2>Contenu de ce E-Portfolio</h2>
+						
+						
+						<span class="byline">
+						</br></br>Clickez sur les liens pour voir :
+							<ul>
+								<li class="active"><a href="html/Projets.html" accesskey="1" title="">Ce que j'ai réalisé</a></li>
+								<li><a href="html/Carriere.html" accesskey="2" title="">Ce que j'ai appris</a></li>
+								
+								<li><a href="html/Projets.html" accesskey="3" title="">Projets en cours</a></li>
+								<li><a href="html/Carriere.html" accesskey="2" title="">Apprentissage actuels</a></li>
+								
+								<li><a href="html/Projets.html" accesskey="4" title="">Projets avenirs</a></li>
+								<li><a href="html/Carriere.html" accesskey="5" title="">Ce que je prévois d'apprendre</a></li>
+							</ul>
+						</span>
+						
+						<span style="display: none;">
+							<span class="fa fa-5x fa-bookmark" aria-hidden="true"></span>
+
+							<span class="fa fa-bullseye" aria-hidden="true"></span>
+
+							<span class="fa fa-file-code-o" aria-hidden="true"></span>
+
+							<span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+
+							<span class="fa fa-file-audio-o" aria-hidden="true"></span>
+
+							<span class="fa fa-headphones" aria-hidden="true"></span>
+
+							<span class="fa fa-suitcase" aria-hidden="true"></span>
+
+							<span class="fa fa-music" aria-hidden="true"></span>
+
+							<span class="fa fa-home" aria-hidden="true"></span>
+
+							<span class="fa fa-download" aria-hidden="true"></span>
+
+							<span class="fa fa-code" aria-hidden="true"></span>
+						</span>	
+					</div>
+					
+					<span style="display: none;">
+						<div class="boxA">
+							<span class="fa fa-cloud-download"></span>
+							<p>Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad  torquent per conubia nostra.</p>
+							<a href="#" class="button button-alt">More Info</a>
+						</div>
+						<div class="boxB">
+							<span class="fa fa-cogs"></span>
+							<p>Etiam neque. Vivamus consequat lorem at nisl. Nullam  wisi a sem semper eleifend. Donec mattis.</p>
+							<a href="#" class="button button-alt">More Info</a>
+						</div>
+						<div class="boxC">
+							<span class="fa fa-wrench"></span>
+							<p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus.</p>
+							<a href="#" class="button button-alt">More Info</a>
+						</div>
+					
+				</div>
+			</div>
+			<div id="welcome">
+
+			</div>
+			<div id="copyright" class="container">
+				<p></p>
+			</div>
+		</center>
+</body>
+</html>

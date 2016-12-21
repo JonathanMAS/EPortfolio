@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : StoneWork 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140228
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>E-Portfolio : A mon sujet</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+	<link href="../default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+	<style>
+		.paragraphe{
+			text-align:left;
+			
+		}
+		.speWord{
+			color: blue;
+		}
+		.speWord2{
+			color: orange;
+		}
+	</style>
+	<script>
+		function clickOn(){
+			alert("Pourquoi tenter d'accéder à nouveau à la page sur laquelle vous êtes déjà ? Enfin, ce faites ce que vous voulez !");
+		}
+		function reset(name){
+			document.getElementById(name).style.backgroundColor = "rgba(0,0,0,0.1)";
+			document.getElementById(name).style.color = "rgba(0,0,0,.8)";
+		}
+		function fCompetence(){	
+			reset('bB');
+			reset('bC');
+			reset('bD');
+			reset('bZ');
+			document.getElementById('bA').style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById('bA').style.color = "white";
+			
+			document.getElementById('A').style.display = "block";
+			document.getElementById('B').style.display = "none";
+			document.getElementById('C').style.display = "none";
+			document.getElementById('D').style.display = "none";
+			document.getElementById('Z').style.display = "none";
+		}
+		function fCursus(){
+			reset('bA');
+			reset('bC');
+			reset('bD');
+			reset('bZ');
+			document.getElementById('bB').style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById('bB').style.color = "white";
+			
+			document.getElementById('A').style.display = "none";
+			document.getElementById('B').style.display = "block";
+			document.getElementById('C').style.display = "none";
+			document.getElementById('D').style.display = "none";
+			document.getElementById('Z').style.display = "none";
+		}
+		function fExplication(){
+			reset('bB');
+			reset('bA');
+			reset('bD');
+			reset('bZ');
+			document.getElementById('bC').style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById('bC').style.color = "white";
+			
+			document.getElementById('A').style.display = "none";
+			document.getElementById('B').style.display = "none";
+			document.getElementById('C').style.display = "block";
+			document.getElementById('D').style.display = "none";
+			document.getElementById('Z').style.display = "none";
+		}
+		function fAutoformation(){
+			reset('bB');
+			reset('bA');
+			reset('bC');
+			reset('bZ');
+			document.getElementById('bD').style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById('bD').style.color = "white";
+			
+			document.getElementById('A').style.display = "none";
+			document.getElementById('B').style.display = "none";
+			document.getElementById('C').style.display = "none";
+			document.getElementById('D').style.display = "block";
+			document.getElementById('Z').style.display = "none";
+		}
+		function fCv(){
+			reset('bB');
+			reset('bA');
+			reset('bC');
+			reset('bD');
+			document.getElementById('bZ').style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById('bZ').style.color = "white";
+			
+			document.getElementById('A').style.display = "none";
+			document.getElementById('B').style.display = "none";
+			document.getElementById('C').style.display = "none";
+			document.getElementById('D').style.display = "none";
+			document.getElementById('Z').style.display = "block";
+		}
+		/**	document.getElementById('buttonA').click(function(){
+				
+				document.getElementById('Apercut').toggle();
+			});
+			
+			dans les balises associer un "onclick="fonction()""
+			**/
+			
+	</script>
+
+</head>
+	<body>
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1><a href="#">E-portfolio</a></h1>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a href="../index.html" accesskey="1" title=""><span class="fa fa-5x fa-home" aria-hidden="true"></span>Accueil</a></li>
+						<li><a href="Projets.html" accesskey="2" title=""><span class="fa fa-folder" aria-hidden="true"></span>Mes projets</a></li>
+						<li><a href="AMonSujet.html" accesskey="3" title=""><span class="fa fa-user" aria-hidden="true"></span>A mon sujet</a></li>
+						<li class="active"><a onclick="clickOn()" accesskey="4" title=""><span class="fa fa-suitcase" aria-hidden="true"></span>Carrière</a></li>
+						<li><a href="Contact.html" accesskey="5" title=""><span class="fa fa-envelope" aria-hidden="true"></span>Me contacter</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner" class="container">
+				<div class="title">
+					<h2>Carrière</h2>
+					<span class="byline">
+						Ici sont notées mes compétences et mon parcourt dans la vie professionnelle
+					</span>
+				</div>
+				<ul class="actions">
+					<li><a href="../MASJonathan.pdf" class="button">Télécharger mon CV</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<center>
+			<div id="wrapper">
+
+				<div id="three-column" class="container">
+					<div>
+						<a id="bA" href="#" class="button button-alt" onmouseover="fCompetence()">Compétences</a>
+						<a id="bB" href="#" class="button button-alt" onmouseover="fCursus()">Cursus</a>
+						<a id="bC" href="#" class="button button-alt" onmouseover="fExplication()">Explications</a>
+						<a id="bD" href="#" class="button button-alt" onmouseover="fAutoformation()">Autoformation</a>
+						<a id="bZ" href="#" class="button button-alt" onmouseover="fCv()">Cv</a>
+					</div>
+					
+					<center>
+						<div id="A" class="A semi">
+							<h2>Compétences</h2>
+							
+							<p>
+								<table>
+									<tr>
+										<th><h3>Compétence</h3></th>
+										<th><h3>Niveau</h3></th>
+										<th><h3>Pratique</h3></th>
+									</tr>
+									<tr>
+										<th><h3>Langage</h3></th>
+										<th><h3></h3></th>
+										<th><h3></h3></th>
+									</tr>
+									
+									<tr>
+										<td>Langage C</td>
+										<td>Maitrise des bases du langage, et de la bibliothéque SDL</td>
+										<td>Depuis 3 ans en autodidacte et 1 an en IUT informatique</td>
+									</tr>
+									<tr>
+										<td>Langage C++</td>
+										<td>Maitrise des bases du langage, et de la bibliothéque Qt</td>
+										<td>Depuis 2 ans en autodidacte</td>
+									</tr>
+									<tr>
+										<td>Langage Java</td>
+										<td>Maitrise des bases du langage, et de la bibliothéque de fenetre intégrée</td>
+										<td>Depuis 3 ans en autodidacte</td>
+									</tr>
+									<tr>
+										<td>Langage Html/css</td>
+										<td>Maitrise des bases du langage</td>
+										<td>Depuis 2 ans en autodidacte et 1 an en IUT informatique</td>
+									</tr>
+									<tr>
+										<td>Langage SQL</td>
+										<td>Maitrise des bases du langage</td>
+										<td>Depuis 1 an en IUT informatique</td>
+									</tr>
+									<tr>
+										<th><h3>Compétence complémentaire</h3></th>
+										<th><h3></h3></th>
+										<th><h3></h3></th>
+									</tr>
+									<tr>
+										<td>Conception Orientée objet</td>
+										<td>Maitrise du concept d'encapsulation, et de plusieurs pattern de conception</td>
+										<td>Depuis 2 ans en autodidacte, et 1 an en IUTinformatique </td>
+									</tr>
+									<tr>
+										<td>Anglais</td>
+										<td>Bonne compréhension écrite</td>
+										<td></td>
+									</tr>
+								</table>
+								
+							</p>
+						</div>
+						
+						<div id="B" class="B">
+							<h2>Cursus Scolaire</h2>
+							
+							<p>
+								<table>
+									<tr>
+										<th><h3>Année</h3></th>
+										<th><h3>Activité</h3></th>
+										<th><h3>Lieu</h3></th>
+										<th><h3>Commentaire</h3></th>
+									</tr>
+									
+									<tr>
+										<td>2015-2016</td>
+										<td><span class="speWord">IUT informatique</span>1ère année</td>
+										<td>Montpellier</td>
+										<td>En cours</td>
+									</tr>
+									<tr>
+										<td>2014-2015</td>
+										<td><span class="speWord">License 1 Droit</span>1ère année</td>
+										<td>Narbonne</td>
+										<td><a href=""></a></td>
+									</tr>
+									<tr>
+										<td>2013-2014</td>
+										<td><span class="speWord">Terminale ES</span></td>
+										<td>Narbonne</td>
+										<td>Obtention du Baccalauréat <span class="speWord2">(Mention assez bien)</span></td>
+									</tr>
+									<tr>
+										<td>2012-2013</td>
+										<td><span class="speWord">Première ES</span></td>
+										<td>Narbonne</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2011-2012</td>
+										<td><span class="speWord">Seconde générale et technologique</span></td>
+										<td>Narbonne</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2010-2011</td>
+										<td><span class="speWord">3ème générale</span></td>
+										<td>Narbonne</td>
+										<td>Obtention du brevet des collèges <span class="speWord2">(Mention assez bien)</span></td>
+									</tr>
+								</table>
+								
+							</p>
+						</div>
+						
+						<div id="C" class="C semi">
+							<h2>Explications</h2>
+							
+							<p class="paragraphe">
+								Comme beaucoup de lycéens, je ne savais pas trop vers quoi me diriger. J'ai 
+								donc choisi ES en me disant que cela me permettrait de me rediriger plus 
+								facilement que si j'avais choisi une filière trop spécifique.
+							</p>
+							<p class="paragraphe">
+								A cette époque je ne me rendais pas compte que ma passion pour l'informatique
+								pourrait devenir un métier, et j'étudiais en autodidacte la programmation 
+								patiemment et assiduement.
+							</p>
+							<p class="paragraphe">
+								C'est en terminale que j'ai su ce que je souhaitais faire. Devenir 
+								<span class="speWord">dévellopeur</span>. Seulement faute de moyens techniques 
+								je n'ai pas pu réaliser ce souhait après le bac. Pour ne pas perdre de temps 
+								et éttofer ma culture j'ai fait une année de license de droit. Cela a été très 
+								enrichissant. Mais bien vite, j'ai postulé pour 
+								<span class="speWord">l' IUT Informatique de montpellier</span>.
+								Par la suite, j'ai prévu de faire une <span class="speWord2">license pro informatique en alternance</span>, 
+								puis d'entrer dans le monde du travail.
+							</p>
+							
+							<p class="paragraphe">
+								Voici un résumé de mon projet professionnel :
+							</p>
+							<iframe src="../C6-Mas-ProjetFormation.pdf" width="640" height="480"></iframe>
+						</div>
+						
+						<div id="D" class="D semi">
+							<h2>Autoformation</h2>
+							</br>
+							<p class="paragraphe">
+							Je me suis beaucoup formé par moi même, étant donné que j'ai commencé à apprendre assez jeune.
+							En voici une explication :
+							</p>
+							
+							<iframe src="../C6-Mas-autoformation.pdf" width="640" height="480"></iframe>
+						</div>
+						
+						<div id="Z" class="Z semi">
+							<h2>CV</h2>
+							</br>
+							<p class="paragraphe">
+							Voici mon CV :
+							</p>
+							
+							<iframe src="../MASJonathan.pdf" width="640" height="480"></iframe>
+						</div>
+					</center>
+				
+				</div>
+			</div>
+			<div id="welcome">
+				
+			</div>
+			<div id="copyright" class="container">
+				<p></p>
+			</div>
+		</center>
+	</body>
+</html>
