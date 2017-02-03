@@ -493,7 +493,8 @@
 	}
 	
 	#menu a{
-		border: 5px;
+		margin: 3px;
+		border: 3px;
 		color: blue;
 	}
 	
@@ -557,7 +558,7 @@
 	
 	#menu li a, #menu li span
 	{
-		padding: 1em 1.5em;
+		padding: 1em 1em;
 		letter-spacing: 1px;
 		text-decoration: none;
 		text-transform: uppercase;
