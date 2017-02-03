@@ -41,13 +41,17 @@ Released   : 20140228
 			document.getElementById(name).style.backgroundColor = "rgba(0,0,0,0.1)";
 			document.getElementById(name).style.color = "rgba(0,0,0,.8)";
 		}
-		function fCompetence(){	
+		function select(name){
+			document.getElementById(name).style.backgroundColor = "rgba(0,0,0,1)";
+			document.getElementById(name).style.color = "white";
+		}
+		
+		function fCompetence(){
 			reset('bB');
 			reset('bC');
 			reset('bD');
 			reset('bZ');
-			document.getElementById('bA').style.backgroundColor = "rgba(0,0,0,1)";
-			document.getElementById('bA').style.color = "white";
+			select('bA');
 			
 			document.getElementById('A').style.display = "block";
 			document.getElementById('B').style.display = "none";
@@ -60,8 +64,7 @@ Released   : 20140228
 			reset('bC');
 			reset('bD');
 			reset('bZ');
-			document.getElementById('bB').style.backgroundColor = "rgba(0,0,0,1)";
-			document.getElementById('bB').style.color = "white";
+			select('bB');
 			
 			document.getElementById('A').style.display = "none";
 			document.getElementById('B').style.display = "block";
@@ -74,8 +77,7 @@ Released   : 20140228
 			reset('bA');
 			reset('bD');
 			reset('bZ');
-			document.getElementById('bC').style.backgroundColor = "rgba(0,0,0,1)";
-			document.getElementById('bC').style.color = "white";
+			select('bC');
 			
 			document.getElementById('A').style.display = "none";
 			document.getElementById('B').style.display = "none";
@@ -88,8 +90,7 @@ Released   : 20140228
 			reset('bA');
 			reset('bC');
 			reset('bZ');
-			document.getElementById('bD').style.backgroundColor = "rgba(0,0,0,1)";
-			document.getElementById('bD').style.color = "white";
+			select('bD');
 			
 			document.getElementById('A').style.display = "none";
 			document.getElementById('B').style.display = "none";
@@ -102,8 +103,7 @@ Released   : 20140228
 			reset('bA');
 			reset('bC');
 			reset('bD');
-			document.getElementById('bZ').style.backgroundColor = "rgba(0,0,0,1)";
-			document.getElementById('bZ').style.color = "white";
+			select('bZ');
 			
 			document.getElementById('A').style.display = "none";
 			document.getElementById('B').style.display = "none";
