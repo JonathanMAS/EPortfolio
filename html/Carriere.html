@@ -45,71 +45,35 @@ Released   : 20140228
 			document.getElementById(name).style.backgroundColor = "rgba(0,0,0,1)";
 			document.getElementById(name).style.color = "white";
 		}
+		function style(name){
+			var onglets = ["B", "A", "C", "D", "Z"];
+			for(var i=0; i < onglets.length; i++){
+				if(onglets[i] == name){
+					document.getElementById(onglets[i]).style.display = "block";
+					select("b"+onglets[i]);
+				} else {
+					document.getElementById(onglets[i]).style.display = "none";
+					reset("b"+onglets[i]);
+				}
+			}
+			
+			
+		}
 		
 		function fCompetence(){
-			reset('bB');
-			reset('bC');
-			reset('bD');
-			reset('bZ');
-			select('bA');
-			
-			document.getElementById('A').style.display = "block";
-			document.getElementById('B').style.display = "none";
-			document.getElementById('C').style.display = "none";
-			document.getElementById('D').style.display = "none";
-			document.getElementById('Z').style.display = "none";
+			style("A");
 		}
 		function fCursus(){
-			reset('bA');
-			reset('bC');
-			reset('bD');
-			reset('bZ');
-			select('bB');
-			
-			document.getElementById('A').style.display = "none";
-			document.getElementById('B').style.display = "block";
-			document.getElementById('C').style.display = "none";
-			document.getElementById('D').style.display = "none";
-			document.getElementById('Z').style.display = "none";
+			style("B");
 		}
 		function fExplication(){
-			reset('bB');
-			reset('bA');
-			reset('bD');
-			reset('bZ');
-			select('bC');
-			
-			document.getElementById('A').style.display = "none";
-			document.getElementById('B').style.display = "none";
-			document.getElementById('C').style.display = "block";
-			document.getElementById('D').style.display = "none";
-			document.getElementById('Z').style.display = "none";
+			style("C");
 		}
 		function fAutoformation(){
-			reset('bB');
-			reset('bA');
-			reset('bC');
-			reset('bZ');
-			select('bD');
-			
-			document.getElementById('A').style.display = "none";
-			document.getElementById('B').style.display = "none";
-			document.getElementById('C').style.display = "none";
-			document.getElementById('D').style.display = "block";
-			document.getElementById('Z').style.display = "none";
+			style("D");
 		}
 		function fCv(){
-			reset('bB');
-			reset('bA');
-			reset('bC');
-			reset('bD');
-			select('bZ');
-			
-			document.getElementById('A').style.display = "none";
-			document.getElementById('B').style.display = "none";
-			document.getElementById('C').style.display = "none";
-			document.getElementById('D').style.display = "none";
-			document.getElementById('Z').style.display = "block";
+			style("Z");
 		}
 		/**	document.getElementById('buttonA').click(function(){
 				
@@ -122,6 +86,7 @@ Released   : 20140228
 	</script>
 
 </head>
+	
 	<body>
 		<div id="header-wrapper">
 			<div id="header" class="container">
@@ -183,27 +148,27 @@ Released   : 20140228
 									<tr>
 										<td>Langage C</td>
 										<td>Maitrise des bases du langage, et de la bibliothéque SDL</td>
-										<td>Depuis 3 ans en autodidacte et 1 an en IUT informatique</td>
+										<td>Depuis 4 ans en autodidacte et 2 an en IUT informatique</td>
 									</tr>
 									<tr>
 										<td>Langage C++</td>
 										<td>Maitrise des bases du langage, et de la bibliothéque Qt</td>
-										<td>Depuis 2 ans en autodidacte</td>
+										<td>Depuis 3 ans en autodidacte</td>
 									</tr>
 									<tr>
 										<td>Langage Java</td>
 										<td>Maitrise des bases du langage, et de la bibliothéque de fenetre intégrée</td>
-										<td>Depuis 3 ans en autodidacte</td>
+										<td>Depuis 4 ans en autodidacte</td>
 									</tr>
 									<tr>
 										<td>Langage Html/css</td>
 										<td>Maitrise des bases du langage</td>
-										<td>Depuis 2 ans en autodidacte et 1 an en IUT informatique</td>
+										<td>Depuis 3 ans en autodidacte et 2 an en IUT informatique</td>
 									</tr>
 									<tr>
 										<td>Langage SQL</td>
 										<td>Maitrise des bases du langage</td>
-										<td>Depuis 1 an en IUT informatique</td>
+										<td>Depuis 2 an en IUT informatique</td>
 									</tr>
 									<tr>
 										<th><h3>Compétence complémentaire</h3></th>
@@ -213,7 +178,7 @@ Released   : 20140228
 									<tr>
 										<td>Conception Orientée objet</td>
 										<td>Maitrise du concept d'encapsulation, et de plusieurs pattern de conception</td>
-										<td>Depuis 2 ans en autodidacte, et 1 an en IUTinformatique </td>
+										<td>Depuis 3 ans en autodidacte, et 2 an en IUTinformatique </td>
 									</tr>
 									<tr>
 										<td>Anglais</td>
@@ -230,22 +195,28 @@ Released   : 20140228
 							
 							<p>
 								<table>
+									
 									<tr>
 										<th><h3>Année</h3></th>
 										<th><h3>Activité</h3></th>
 										<th><h3>Lieu</h3></th>
 										<th><h3>Commentaire</h3></th>
 									</tr>
-									
 									<tr>
-										<td>2015-2016</td>
-										<td><span class="speWord">IUT informatique</span>1ère année</td>
+										<td>2016-2017</td>
+										<td><span class="speWord">IUT informatique</span> 2 ème année</td>
 										<td>Montpellier</td>
 										<td>En cours</td>
 									</tr>
 									<tr>
+										<td>2015-2016</td>
+										<td><span class="speWord">IUT informatique</span> 1 ère année</td>
+										<td>Montpellier</td>
+										<td></td>
+									</tr>
+									<tr>
 										<td>2014-2015</td>
-										<td><span class="speWord">License 1 Droit</span>1ère année</td>
+										<td><span class="speWord">License 1 Droit</span> 1 ère année</td>
 										<td>Narbonne</td>
 										<td><a href=""></a></td>
 									</tr>
@@ -267,12 +238,7 @@ Released   : 20140228
 										<td>Narbonne</td>
 										<td></td>
 									</tr>
-									<tr>
-										<td>2010-2011</td>
-										<td><span class="speWord">3ème générale</span></td>
-										<td>Narbonne</td>
-										<td>Obtention du brevet des collèges <span class="speWord2">(Mention assez bien)</span></td>
-									</tr>
+									
 								</table>
 								
 							</p>
@@ -293,7 +259,7 @@ Released   : 20140228
 							</p>
 							<p class="paragraphe">
 								C'est en terminale que j'ai su ce que je souhaitais faire. Devenir 
-								<span class="speWord">dévellopeur</span>. Seulement faute de moyens techniques 
+								<span class="speWord">développeur</span>. Seulement faute de moyens techniques 
 								je n'ai pas pu réaliser ce souhait après le bac. Pour ne pas perdre de temps 
 								et éttofer ma culture j'ai fait une année de license de droit. Cela a été très 
 								enrichissant. Mais bien vite, j'ai postulé pour 

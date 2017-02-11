@@ -61,7 +61,7 @@
 			border-radius: 5px;
          }
 		 .tabs .tab-label:hover{
-			background: rgba(0,0,0,0.1); 
+			background: rgba(0,0,200,0.1); 
 			color: black;
 			animation: colorisation2;
 			-webkit-animation-name: colorisation2; /* Chrome, Safari, Opera */
@@ -73,13 +73,13 @@
 		 /* Chrome, Safari, Opera */
 		@-webkit-keyframes colorisation2 {
 			from {background: rgba(0,0,0,0.0);}
-			to {background: rgba(0,0,0,0.1);}
+			to {background: rgba(0,0,200,0.1);}
 		}
 
 		/* Standard syntax */
 		@keyframes colorisation2 {
 			from {background: rgba(0,0,0,0.0);}
-			to {background: rgba(0,0,0,0.1);}
+			to {background: rgba(0,0,200,0.1);}
 		}
          .tabs .tab > [type="radio"] {
 			 clip: rect(0 0 0 0);
@@ -87,7 +87,7 @@
 			 opacity: 0;
 			 position: fixed;
 			 width: 1px;
-			 z-index: -1;
+			 z-index:1;
          }
          .tabs .tab-panel {
 			 display: inline;
@@ -112,7 +112,8 @@
 			 width: 100%;
          }
          .tabs .tab [type="radio"]:checked + .tab-label {
-			 background: rgba(0,0,0,0.3);
+			 background: rgba(0,0,200,0.2);
+			 border : rgba(0,0,200,0.2);
          }
          .tabs .tab [type="radio"]:checked ~ .tab-panel {
 			display: inline;
@@ -222,7 +223,7 @@
 			
                <div class="tabs">
                   <div class="tab">
-                     <input class="tab-radio" type="radio" id="tab-1" name="tab-group-1" checked>
+                     <input class="tab-radio" type="radio" id="tab-1" name="tab-group-1" checked/>
                      <label class="tab-label" for="tab-1">Personnalité</label>
                      <div class="tab-panel">
                         <div class="tab-content">
@@ -249,7 +250,6 @@
 									J'ai un coté <span class="speWord">rêveur</span> et <span class="speWord">idéaliste</span> qui se traduit par 
 									mon souhait de réaliser quelque chose qui profitera à l'humanité. D'apporter ma pierre à ce vaste monde
 								 </p>
-								 <p>
 							</span>
                         </div>
                      </div>
@@ -264,7 +264,7 @@
 								<h2></h2>
 								
 								<p class="paragraphe">
-								J'aimerai devenir <span class="speWord2">Devellopeur</span> car je programme depuis plusieurs années, et je sais 
+								J'aimerai devenir <span class="speWord2">Developpeur</span> car je programme depuis plusieurs années, et je sais 
 								que j'aime suffisament cela pour en faire toute ma vie. Plus le grand nombre d'avantage personnel que j'y trouve. 
 								Par exemple, j'apprecie le fait de savoir comment ça "fonctionne à l'interieur". Le fait de pouvoir réparer mon 
 								ordinateur par moi même. Ou même de pouvoir créer des logiciels qui m'aident dans mes activités.
@@ -279,8 +279,7 @@
                         </div>
                      </div>
                   </div>
-                  
-				  
+                  		  
 				  <div class="tab">
                      <input class="tab-radio" type="radio" id="tab-3" name="tab-group-1">
                      <label class="tab-label" for="tab-3">Valeurs/Motivations</label>
@@ -288,8 +287,8 @@
                         <div class="tab-content">
                            <p class="paragraphe">
 								Comme beaucoup, je souhaite avoir la sécurité de l'emploi car ça facilite la vie. On a pas à se préoccuper des 
-								finances car on sait ce qu'on va toucher à la fin du mois et pouvoir s'organiser en fonction. Cela limite la mobilité 
-								puisque'on est attaché à notre lieu de travail, mais cela ne me dérange pas.
+								finances car on sait de combien on dispose pour pouvoir s'organiser. Cela limite la mobilité 
+								puisque'on est attaché à notre lieu de travail, et c'est plutôt plaisant pour fonder un foyer.
 						   </p>
 						   ___________________________
 						    <p class="paragraphe">
@@ -310,7 +309,8 @@
                         </div>
                      </div>
                   </div>
-               
+					
+				<!--
 				   <div class="tab">
 						 <input class="tab-radio" type="radio" id="tab-4" name="tab-group-1">
 						 <label class="tab-label" for="tab-4">Portrait Chinois</label>
@@ -357,7 +357,7 @@
                         </div>
                      </div>
                   </div>
-               
+               -->
 			   </div>
                
             </div>
