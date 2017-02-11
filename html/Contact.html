@@ -1,87 +1,145 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
-Name       : StoneWork 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140228
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <style>
+            a{
+                transition: color 0.5s;
+            } 
+             
+            a:hover:not(.btn){
+                color: aqua;
+            }
+            
+            a:hover{
+                -webkit-transform: scale(1.03);
+            }
+            
+            nav li > a:hover{
+                color: white;
+                -webkit-transform: scale(1.05);
+            }
+            
+              body {
+                display: flex;
+                min-height: 80vh;
+                flex-direction: column;
+              }
 
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>E-Portfolio : Contact</title>
+              main {
+                flex: 1 0 auto;
+              }
+            
+        </style>
+    </head>
 
-	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
-	<link href="../default.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <body>
+        
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><span class="grey-text text-darken-4 left">.</span><i class="material-icons">contacts</i>EPortfolio</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li><a href="projets.html"><i class="material-icons left pink-text">view_list</i>Projets</a></li>
+                <li><a href="biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li class="indigo darken-3"><a href="contact.html"><i class="material-icons left">email</i>Contact</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a><i class="material-icons">contacts</i><h3>EPortfolio</h3></a></li>
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li><a href="projets.html"><i class="material-icons left pink-text">view_list</i>Projets</a></li>
+                <li><a href="biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li class="indigo darken-3"><a href="contact.html"><i class="material-icons left">email</i>Contact</a></li>
+              </ul>
+                
+            </div>
+            </div>
+          </nav>
+        
+        <div class="indigo darken-4">
+            <div class="col s12 indigo-text text-darken-4">
+                .
+            </div>
+        </div>
+        
+        <main>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../assets/img/header-bg.jpg"></div>
+                <br><br>
+                <div class="row">
+                    
+                    <div class="col s10 offset-s1">
+                        <div class="card grey darken-4">
+                            <div class="card-content white-text">
+                                <center>
+                                    <span class="card-title">
+                                        <h2>Vous voulez me joindre ?</h2>
+                                        <span class="">Envoyez moi un mail !</span>
+                                    </span>
 
-	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+                                    <p>
+                                        <h2>Mas Jonathan </h2>
+                                        <a href="mailto:jonathanmas.public@gmail.com">jonathanmas.public@gmail.com</a>
+                                    </p>
+                                </center>
 
-	<style>
-		.paragraphe{
-			text-align:left;
-			
-		}
-		.speWord{
-			color: blue;
-		}
-		.speWord2{
-			color: orange;
-		}
-		.centrer{
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.carte{
-			width: 70%;
-		}
-		
-	</style>
-
-</head>
-<body>
-<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#">E-portfolio</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="../index.html" accesskey="1" title=""><span class="fa fa-5x fa-home" aria-hidden="true"></span>Accueil</a></li>
-				<li><a href="Projets.html" accesskey="2" title=""><span class="fa fa-folder" aria-hidden="true"></span>Mes projets</a></li>
-				<li><a href="AMonSujet.html" accesskey="3" title=""><span class="fa fa-user" aria-hidden="true"></span>A mon sujet</a></li>
-				<li><a href="Carriere.html" accesskey="4" title=""><span class="fa fa-suitcase" aria-hidden="true"></span>Carrière</a></li>
-				<li class="active"><a href="Contact.html" accesskey="5" title=""><span class="fa fa-envelope" aria-hidden="true"></span>Me contacter</a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="banner" class="container">
-		<div class="title">
-			<h2>Contact</h2>
-		</div>
-	</div>
-</div>
-
-<div id="welcome" class="centrer carte">
-	
-	<div class="container">
-	
-		<div class="title">
-			<h2>Vous voulez me joindre ?</h2>
-			<span class="byline">Envoyez moi un mail !</span>
-		</div>
-		<p>
-			<h2>Mas Jonathan </h2>
-			<a href="mailto:jonathanmas.public@gmail.com">jonathanmas.public@gmail.com</a>
-		</p>
-	</div>
-</div>
-<div id="copyright" class="container">
-	<p></p>
-</div>
-</body>
-</html>
+					
+                            </div>
+                            <!--
+                            <div class="card-action">
+                                <a class="waves-effect waves-light btn blue">Projets</a>
+                                <a class="waves-effect waves-light btn green">Bio.</a>
+                                <a class="waves-effect waves-light btn orange">Carrière</a>
+                                <a class="waves-effect waves-light btn pink">Contact</a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+        
+        </main>
+        
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+            });
+            $(".button-collapse").sideNav();
+        </script>
+    </body>
+      
+    <footer class="page-footer indigo darken-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">2017-2018 IUT Informatique</p>
+              </div>
+            </div>
+          </div>
+      <div class="footer-copyright black">
+        <div class="container">
+            <p class="grey-text text-lighten-4">Site réalisé en HTML/CSS/JS par Jonathan Mas à l'aide de Materialize.css</p>
+        <a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </html>

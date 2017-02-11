@@ -1,103 +1,107 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
-Name       : StoneWork 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140228
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <style>
+            a{
+                transition: color 0.5s;
+            } 
+             
+            a:hover:not(.btn){
+                color: aqua;
+            }
+            
+            a:hover{
+                -webkit-transform: scale(1.03);
+            }
+            
+            nav li > a:hover{
+                color: white;
+                -webkit-transform: scale(1.05);
+            }
+            
+              body {
+                display: flex;
+                min-height: 80vh;
+                flex-direction: column;
+              }
 
--->
+              main {
+                flex: 1 0 auto;
+              }
+            
+        </style>
+    </head>
 
+    <body>
+        
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>E-Portfolio : Mes Projets</title>
-	
-	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
-	<link href="../default.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
-	
-	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-	
-	<style>
-		.paragraphe{
-			text-align:left;
-			
-		}
-		.speWord{
-			color: blue;
-		}
-		.speWord2{
-			color: orange;
-		}
-		.centrer{
-			margin-left: auto;
-			margin-right: auto;
-		}
-	</style>
-	
-	<script>
-		function clickOn(){
-			alert("Pourquoi tenter d'accéder à nouveau à la page sur laquelle vous êtes déjà ? Enfin, ce faites ce que vous voulez !");
-		}
-	</script>
-</head>
-<body class="centrer">
-	<div id="header-wrapper">
-		<div id="header" class="container">
-			<div id="logo">
-				<h1><a href="#">E-portfolio</a></h1>
-			</div>
-			<div id="menu">
-				<ul>
-					<li><a href="../index.html" accesskey="1" title=""><span class="fa fa-5x fa-home" aria-hidden="true"></span>Accueil</a></li>
-					<li class="active"><a href="Projets.html" accesskey="2" title=""><span class="fa fa-folder" aria-hidden="true"></span>Mes projets</a></li>
-					<li><a href="AMonSujet.html" accesskey="3" title=""><span class="fa fa-user" aria-hidden="true"></span>A mon sujet</a></li>
-					<li><a href="Carriere.html" accesskey="4" title=""><span class="fa fa-suitcase" aria-hidden="true"></span>Carrière</a></li>
-					<li><a href="Contact.html" accesskey="5" title=""><span class="fa fa-envelope" aria-hidden="true"></span>Me contacter</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="banner" class="container">
-			<div class="title">
-				<h2>Mes Projets</h2>
-				<span class="byline">
-					Ici sont répertoriées les réalisations passées, actuelles et potentielles dans lesquelles je suis impliqué.
-				</span>
-			</div>
-		</div>
-	</div>
-	
-	<center>
-		<div id="wrapper" class="centrer">
-			<div id="three-column" class="container">
-				<div class="title">
-					<p><h2>Projets :</h2></p>
-					<span class="byline">
-						<p class="semi">
-							Voici la liste des projets réalisés, en cours de réalisations, ainsi que ceux qui projettent de l'être.
-							Ces projets ont pour la plupart été réalisés dans le cadre de mon temps personnel, et j'ai beaucoup 
-							apprécié y travailler. Mes créations musicales sont les plus nombreuses du fait que la musique est 
-							beaucoup moins chronophage que la programmation. Malgré tout, je garde une préférence pour le dévellopement.
-							Surtout le dévellopement logiciel.
-						</p>
-						
-						
-					</span>
-				</div>
-				
-				<div class="centerItems">
-					
-					<div class="A"> <!-- realisé -->
-						<span class="fa fa-folder"></span>
-						
-						<div class="A">
-							<p><h2>Réalisés :</h2> </p>
-								<table>
+        <nav class="nav-extended grey darken-4">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><span class="grey-text text-darken-4 left">.</span><i class="material-icons">contacts</i>EPortfolio</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li class="indigo darken-3"><a href="projets.html"><i class="material-icons left">view_list</i>Projets</a></li>
+                <li><a href="biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li><a href="contact.html"><i class="material-icons left pink-text">email</i>Contact</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a><i class="material-icons">contacts</i><h3>EPortfolio</h3></a></li>
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li class="indigo darken-3"><a href="projets.html"><i class="material-icons left">view_list</i>Projets</a></li>
+                <li><a href="biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li><a href="contact.html"><i class="material-icons left pink-text">email</i>Contact</a></li>
+              </ul>
+                
+            </div>
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="#realise">realise</a></li>
+                <li class="tab"><a href="#enCours">enCours</a></li>
+                <li class="tab"><a href="#aVenir">aVenir</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+        <div class="indigo darken-4">
+            <div class="col s12 indigo-text text-darken-4">
+                .
+            </div>
+        </div>
+        
+        <main>
+            
+            <div class="parallax-container">
+                <div class="parallax"><img src="../assets/img/header-bg.jpg"></div>
+                <br>
+                <div class="row">
+                    
+                    <div class="row grey darken-4 z-depth-3 white-text">
+                        <div class="col s6 offset-s3"> 
+                            <h1>Carrière</h1>
+                            <p>Ici sont notées mes compétences et mon parcourt de vie professionnelle.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="realise" class="col s10 offset-s1">
+                        <div class="card grey darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                
+                                <div class="title">
+                                    
+                                 <p>
+                                  <table class="responsive-table highlight">
 									<tr>
 										<th><h3>Musique</h3></th>
 										<th><h3>Logiciel</h3></th>
@@ -203,64 +207,90 @@ Released   : 20140228
 										<td></td>
 									</tr>
 								</table>
-						</div>
-					</div>
-					
-					<div class="B"> <!-- en cours -->
-						<span class="fa fa-cogs" id="buttonB"></span>
-						
-						<div class="B">
-						<p><h2>En cours</h2></p>
-						<p>
-							<table>
-								<tr>
-									<th><h3>Musique</h3></th>
-									<th><h3>Logiciel</h3></th>
-									<th><h3>Site web</h3></th>
-								</tr>
-								
-								<tr>
-										<td><a href="#"></a></td>
-										<td><a href="">Almu</a></td>
-										<td><a href="http://infolimon.iutmontp.univ-montp2.fr/~tartierem/Joomla3/">Ecol'Eclair</a></td>
-									</tr>
-							</table>
-						</p>
-						</div>
-					</div>
-					
-					<div class="C"> <!-- à venir -->
-						<span class="fa fa-pencil-square-o" id="buttonC"></span>
-						
-						<div class="A">
-						<p>A venir</p>
-						
-						rien pour l'instant
-						</div>
-					</div>
-				
-					
-					
-				</div>
-			</div>
-		</div>
-		<div id="welcome">
-			<div class="container">
-				<div class="title">
-					<h2>Une suggestion de projet ?</h2>
-					</br>
-					<span class="byline">Ecoutez donc ceci :</span>
-					</br>
-					</br>
-				</div>
-				<iframe width="640" height="360" src="https://www.youtube.com/embed/knR8yP_Y5AM" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div id="copyright" class="container">
-			<p></p>
-		</div>
+                                </p>
 
-	</center>
-	
-</body>
-</html>
+                                    
+                                </div>
+					
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="enCours" class="col s10 offset-s1">
+                        <div class="card grey darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                
+                                <div class="title">
+                                
+                                    <table class="responsive-table highlight">
+                                        <tr>
+                                            <th><h3>Musique</h3></th>
+                                            <th><h3>Logiciel</h3></th>
+                                            <th><h3>Site web</h3></th>
+                                        </tr>
+
+                                        <tr>
+                                                <td><a href="#"></a></td>
+                                                <td><a href="">Almu</a></td>
+                                                <td><a href="http://infolimon.iutmontp.univ-montp2.fr/~tartierem/Joomla3/">Ecol'Eclair</a></td>
+                                            </tr>
+                                    </table>
+                                    
+                                </div>
+					
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="aVenir" class="col s10 offset-s1">
+                        <div class="card grey darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                
+                                <div class="title">
+                                    
+                                    <center>
+                                        rien pour l'instant
+                                    </center>
+                                    
+                                    
+                                </div>
+					
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </main>
+        
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+            });
+            $(".button-collapse").sideNav();
+        </script>
+    </body>
+      
+    <footer class="page-footer indigo darken-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">2017-2018 IUT Informatique</p>
+              </div>
+            </div>
+          </div>
+      <div class="footer-copyright black">
+        <div class="container">
+            <p class="grey-text text-lighten-4">Site réalisé en HTML/CSS/JS par Jonathan Mas à l'aide de Materialize.css</p>
+        <a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </html>

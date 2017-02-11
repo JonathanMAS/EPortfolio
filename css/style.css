@@ -1,0 +1,40 @@
+a{
+    transition: color 0.5s;
+    text-decoration: underline;
+} 
+.nav-extended a{
+    text-decoration: none;
+}
+
+a:hover:not(.btn){
+    color: aqua;
+}
+
+a:hover{
+    -webkit-transform: scale(1.03);
+}
+
+nav li > a:hover{
+    color: white;
+    -webkit-transform: scale(1.05);
+}
+
+body {
+display: flex;
+min-height: 80vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+.parallax-container {
+  height: 70%;
+}
+
+
+
+
+
+
