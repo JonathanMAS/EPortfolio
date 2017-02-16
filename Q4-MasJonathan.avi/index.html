@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <style>
+            a{
+                transition: color 0.5s;
+            } 
+             
+            a:hover:not(.btn){
+                color: aqua;
+            }
+            
+            a:hover{
+                -webkit-transform: scale(1.03);
+            }
+            
+            nav li > a:hover{
+                color: white;
+                -webkit-transform: scale(1.05);
+            }
+            
+              body {
+                display: flex;
+                min-height: 80vh;
+                flex-direction: column;
+              }
+
+              main {
+                flex: 1 0 auto;
+              }
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><span class="grey-text text-darken-4 left">.</span><i class="material-icons">contacts</i>EPortfolio</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li><a href="../html/projets.html"><i class="material-icons left pink-text">view_list</i>Projets</a></li>
+                <li><a href="../html/biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="../html/carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li class="../html/indigo darken-3"><a href="contact.html"><i class="material-icons left pink-text">email</i>Contact</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a><i class="material-icons">contacts</i><h3>EPortfolio</h3></a></li>
+                <li><a href="../index.html"><i class="material-icons left pink-text">home</i>Accueil</a></li>
+                <li><a href="../html/projets.html"><i class="material-icons left pink-text">view_list</i>Projets</a></li>
+                <li><a href="../html/biographie.html"><i class="material-icons left pink-text">perm_identity</i>Biographie</a></li>
+                <li><a href="../html/carriere.html"><i class="material-icons left pink-text">work</i>Carrière</a></li>
+                <li class="indigo darken-3"><a href="../html/contact.html"><i class="material-icons left pink-text">email</i>Contact</a></li>
+              </ul>
+                
+            </div>
+            </div>
+          </nav>
+        
+        <div class="indigo darken-4">
+            <div class="col s12 indigo-text text-darken-4">
+                .
+            </div>
+        </div>
+        
+        <main>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../assets/img/header-bg.jpg"></div>
+                <br><br>
+                <div class="row">
+                    
+                    <div class="col s10 offset-s1">
+                        <div class="card grey darken-4">
+                            <div class="card-content white-text">
+                                <center>
+                                    <span class="card-title">
+                                        <h2>Présentation du projet ALMU</h2>
+                                        <span class="">Plateforme en maintenance, vidéo en cours d'upload ... </span>
+										  <div class="progress indigo">
+											  <div class="indeterminate indigo darken-3"></div>
+										  </div>
+                                    </span>
+
+                                    <p>
+                                        <iframe src="https://www.youtube.com/watch?v=mj3jfqPwJEk"></iframe>
+                                    </p>
+                                </center>
+
+					
+                            </div>
+                            <!--
+                            <div class="card-action">
+                                <a class="waves-effect waves-light btn blue">Projets</a>
+                                <a class="waves-effect waves-light btn green">Bio.</a>
+                                <a class="waves-effect waves-light btn orange">Carrière</a>
+                                <a class="waves-effect waves-light btn pink">Contact</a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+            <div class="grey darken-4 grey-text text-darken-4">.</div>
+        
+        </main>
+        
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+            });
+            $(".button-collapse").sideNav();
+        </script>
+    </body>
+      
+    <footer class="page-footer indigo darken-4">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">2017-2018 IUT Informatique</p>
+              </div>
+            </div>
+          </div>
+      <div class="footer-copyright black">
+        <div class="container">
+            <p class="grey-text text-lighten-4">Site réalisé en HTML/CSS/JS par Jonathan Mas à l'aide de Materialize.css</p>
+        <a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </html>
